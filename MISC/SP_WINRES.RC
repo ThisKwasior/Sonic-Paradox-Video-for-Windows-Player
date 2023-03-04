@@ -1,0 +1,23 @@
+10 ICON "SP_ICON.ICO"
+11 ICON "CD1_ICON.ICO"
+12 ICON "CD2_ICON.ICO"
+13 ICON "CD3_ICON.ICO"
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "Sonic Paradox"
+      VALUE "FileDescription", "SPLAYER"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "Sonic Paradox Video for Windows Player"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END
