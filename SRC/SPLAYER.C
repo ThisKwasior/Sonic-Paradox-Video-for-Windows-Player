@@ -316,7 +316,7 @@ void SP_poll_event(SDL_Event* event)
                        
                         if(i == ui_message_id)
                         {
-                            MessageBox(NULL, "-Video and Audio Encoding, Project Director-\nDr. Mack Foxx\n\n-Programming Wizard, Graphic Design-\nKwasior\n\n-Graphic Design-\nPiggybank\n\n-Graphic Design-\nTheWax\n\n\nSource Code available at:\ngithub.com/ThisKwasior/Sonic-Paradox-Video-for-Windows-Player\nand in the LEGAL\\SP-SRC.ZIP compressed file on the CD.",
+                            MessageBox(NULL, "-Video and Audio Encoding, Project Director-\nDr. Mack Foxx\n\n-Programming Wizard, Graphic Design-\nKwasior\n\n-Graphic Design-\nPiggybank\n\n-Graphic Design-\nTheWax\n\n-Testers-\nGaerma & Aaraboga Jones\n\nSource Code available at:\ngithub.com/ThisKwasior/Sonic-Paradox-Video-for-Windows-Player\nand in the LEGAL\\SP-SRC.ZIP compressed file on the CD.",
                                        "**Sonic Paradox for Windows 95 Staff**", MB_OK);
                             break;
                         }
