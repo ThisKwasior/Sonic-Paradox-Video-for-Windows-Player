@@ -13,6 +13,7 @@
 
 #include <SDL/SDL.h>
 #include <SDL/SDL_keyboard.h>
+#include <SDL/SDL_syswm.h>
 
 /*
     SPlayer internals
@@ -316,7 +317,15 @@ void SP_poll_event(SDL_Event* event)
                        
                         if(i == ui_message_id)
                         {
-                            MessageBox(NULL, "-Video and Audio Encoding, Project Director-\nDr. Mack Foxx\n\n-Programming Wizard, Graphic Design-\nKwasior\n\n-Graphic Design-\nPiggybank\n\n-Graphic Design-\nTheWax\n\n-Testers-\nGaerma & Aaraboga Jones\n\nSource Code available at:\ngithub.com/ThisKwasior/Sonic-Paradox-Video-for-Windows-Player\nand in the LEGAL\\SP-SRC.ZIP compressed file on the CD.",
+                            SDL_SysWMinfo info;
+                            HWND hwnd = NULL;
+
+                            SDL_VERSION(&info.version)
+                            if (SDL_GetWMInfo(&info)) {
+                                hwnd = info.window;
+                            }
+
+                            MessageBox(hwnd, "-Video and Audio Encoding, Project Director-\nDr. Mack Foxx\n\n-Programming Wizard, Graphic Design-\nKwasior\n\n-Graphic Design-\nPiggybank\n\n-Graphic Design-\nTheWax\n\n-Testers-\nGaerma & Aaraboga Jones\n\nSource Code available at:\ngithub.com/ThisKwasior/Sonic-Paradox-Video-for-Windows-Player\nand in the LEGAL\\SP-SRC.ZIP compressed file on the CD.",
                                        "**Sonic Paradox for Windows 95 Staff**", MB_OK);
                             break;
                         }
